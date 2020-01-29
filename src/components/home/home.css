@@ -1,0 +1,16 @@
+.chapiteau_photo {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+
+}
+
+.home_button {
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 20px;
+}
