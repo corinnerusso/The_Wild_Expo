@@ -1,14 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import chapiteau from "./../../style/assets/chapiteau.png";
+import chapiteau from "./../../style/assets/chapiteau.jpg";
+import "./home.css";
 
 const Home = () => {
   return (
     <div className="home_title">
-      <img src={chapiteau} alt="chapiteau" className="home_image" />
-      <NavLink exact to="/Principal">
-        <div className="home_button">Entrez sous le chapiteau</div>
-      </NavLink>
+      <div className="home_bk">
+        <img src={chapiteau} alt="chapiteau" className="home_image" />
+      </div>
+      <div className="home_click">
+        <NavLink style={{ textDecoration: "none" }} exact to="/Principal">
+          <p className="home_button">Entrez sous le chapiteau</p>
+        </NavLink>
+      </div>
     </div>
   );
 };

@@ -9,3 +9,9 @@
   height: 100%;
 
 }
+
+.center_name {
+  color: black;
+  font-size: 3vh;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
