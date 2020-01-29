@@ -1,0 +1,35 @@
+.artist_all {
+  display: flex;
+  flex-direction: row;
+}
+
+.artist_photo_and_desc {
+  display: flex;
+  flex-direction: row;
+}
+
+.artist_blabla {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  margin: 2% 10% 2% 10%;
+}
+
+.amo_exemples {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/***images***/
+.artist_pic {
+  height: 30vw;
+  width: 50vw;
+}
+
+.amo_ex {
+  height: 20vw;
+  width: 20vw;
+
+}

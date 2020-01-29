@@ -1,0 +1,12 @@
+.table_general {
+  display: flex;
+  justify-content: center;
+}
+
+td,
+th {
+  border: solid;
+  text-align: center;
+  width: 20%;
+
+}
