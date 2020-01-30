@@ -15,6 +15,9 @@ const Navbar = () => {
         <Link to="/Form" style={{ textDecoration: "none" }}>
           <li className="nav_li">Réservez</li>
         </Link>
+        <Link to="/Admin" style={{ textDecoration: "none" }}>
+          <li className="nav_li">Admin</li>
+        </Link>
       </ul>
     </div>
   );

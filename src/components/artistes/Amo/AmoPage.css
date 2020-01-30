@@ -1,6 +1,11 @@
 .artist_all {
   display: flex;
   flex-direction: row;
+
+}
+
+.artist_title {
+  color: white;
 }
 
 .artist_photo_and_desc {
@@ -13,6 +18,7 @@
   flex-direction: column;
   line-height: 2rem;
   margin: 2% 10% 2% 10%;
+  color: white;
 }
 
 .amo_exemples {
@@ -24,12 +30,13 @@
 
 /***images***/
 .artist_pic {
-  height: 30vw;
+  height: 61vh;
   width: 50vw;
+  margin-left: 60px;
 }
 
 .amo_ex {
-  height: 20vw;
+  height: 33vh;
   width: 20vw;
 
 }

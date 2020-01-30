@@ -9,7 +9,7 @@ const DaleastPage = () => {
   return (
     <div>
       <NavBar />
-      <h1>Daleast</h1>
+      <h1 className="artist_title">Daleast</h1>
       <div className="artist_all">
         <div className="artist_photo_and_desc">
           <img

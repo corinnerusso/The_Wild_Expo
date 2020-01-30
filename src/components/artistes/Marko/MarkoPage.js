@@ -9,7 +9,7 @@ const MarkoPage = () => {
   return (
     <div>
       <NavBar />
-      <h1>Marko 93</h1>
+      <h1 className="artist_title">Marko 93</h1>
       <div className="artist_all">
         <div className="artist_photo_and_desc">
           <img

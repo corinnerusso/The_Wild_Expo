@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from "./../pincipal/childComponents/NavBar";
-import Footer from "./../pincipal/childComponents/Footer";
+import NavBar from "../pincipal/childComponents/NavBar";
 import Complete from "./childComponents/Complete";
+import Footer from "./../pincipal/childComponents/Footer";
 
 const Form = () => {
   return (

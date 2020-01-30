@@ -11,7 +11,7 @@ const AmoPage = () => {
   return (
     <div>
       <NavBar />
-      <h1>Amo Art</h1>
+      <h1 className="artist_title">Amo Art</h1>
       <div className="artist_all">
         <div className="artist_photo_and_desc">
           <img

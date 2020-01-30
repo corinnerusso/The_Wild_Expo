@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Center = () => {
   return (
-    <div>
+    <div className="center_div">
       <h1>Venez découvrir les artistes qui exposent</h1>
       <div className="center_total">
         <div className="center_artist">

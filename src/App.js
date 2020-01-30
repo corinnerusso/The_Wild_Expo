@@ -7,6 +7,7 @@ import Form from "./components/formulaire/Form";
 import AmoPage from "./../src/components/artistes/Amo/AmoPage";
 import DaleastPage from "./components/artistes/Daleast/DaleastPage";
 import MarkoPage from "./components/artistes/Marko/MarkoPage";
+import Admin from "./components/admin/Admin";
 
 import "./App.css";
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/AmoPage" component={AmoPage} />
         <Route path="/DaleastPage" component={DaleastPage} />
         <Route path="/MarkoPage" component={MarkoPage} />
+        <Route path="/Admin" component={Admin} />
       </Switch>
     </div>
   );

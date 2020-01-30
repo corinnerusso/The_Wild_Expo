@@ -4,25 +4,22 @@ import "./table.css";
 const Table = () => {
   return (
     <div className="table_general">
-      <table>
-        <thead>
-          <tr>
-            <td></td>
-            <th>Adultes</th>
-            <th>Enfants de -12 ans</th>
-            <th>Groupes (plus de 10 personnes)</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th>Tarifs</th>
-            <td>10 €</td>
-            <td>5 €</td>
-            <td>25 €</td>
-          </tr>
-        </tbody>
-      </table>
+      <h1 className="table_title">NOS TARIFS</h1>
+      <div className="table_prices">
+        <div className="table_info">
+          <p>Adultes</p>
+          <p>10 €</p>
+        </div>
+        <div className="table_info">
+          <p>Enfants -12 ans</p>
+          <p> 5 €</p>
+        </div>
+        <div className="table_info">
+          <p>Tarif Groupe</p>
+          <p>A partir de 5 personnes</p>
+          <p>25 €</p>
+        </div>
+      </div>
     </div>
   );
 };

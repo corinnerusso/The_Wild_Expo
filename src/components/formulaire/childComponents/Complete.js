@@ -11,8 +11,6 @@ const Complete = () => {
     nb_visitors: "",
     date_resa: ""
   });
-  //popup
-  const [popupNewPlayer, setPopupNewPlayer] = useState(false);
 
   //update form with inputs
   const updateForm = e => {
@@ -22,8 +20,6 @@ const Complete = () => {
 
   //submit infos on database on submit
   const submitForm = () => {
-    console.log("form : ", form);
-
     axios
       .post(`http://localhost:5000/api/posts`, {
         firstname: form.firstname,
@@ -37,16 +33,18 @@ const Complete = () => {
           firstname: "",
           lastname: "",
           email: "",
-          nb_places: "",
-          date: ""
+          nb_visitors: "",
+          date_resa: ""
         });
       })
       .catch(function(error) {});
   };
-  return (
-    <div>
-      <h1>FORMULAIRE DE RESERVATION</h1>
 
+  return (
+    <div className="test">
+      <div className="complete_title">
+        <p>FORMULAIRE DE RESERVATION</p>
+      </div>
       <div className="form_inputs">
         {/* nom */}
         <input
@@ -76,23 +74,23 @@ const Complete = () => {
           onChange={updateForm}
         />
         <label for="place-select">Nombre de places</label>
-        <select name="nb_places" onChange={updateForm}>
+        <select name="nb_visitors" onChange={updateForm}>
           <option value="">--Faites votre choix--</option>
           <option value="one">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
-          <option value="groupe">Groupe (+ 10 pers)</option>
+          <option value="groupe">Groupe (+ 5 pers)</option>
         </select>
-        <label for="artist-select">Nombre de places</label>
+        <label for="artist-select">Date de la réservation</label>
         <input
           type="date"
           className="addUser-input"
-          name="date"
+          name="date_resa"
           onChange={updateForm}
         />
-        <p>prix total : </p>
-        <button text="Valider" addOnClick={() => submitForm()}>
+        <div className="complete_date">Prix total : </div>
+        <button text="Valider" onClick={() => submitForm()}>
           Valider
         </button>
       </div>

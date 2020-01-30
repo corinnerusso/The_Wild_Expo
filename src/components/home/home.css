@@ -1,50 +1,37 @@
-.home_title {
+.home {
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-image: url("./../../style/assets/chapiteau.jpg") !important;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .home_image {
   width: 100%;
-  height: auto;
-
+  height: 100vh;
 }
 
 .home_button {
-  color: white;
+  position: absolute;
+  color: black;
   height: 20%;
   font-size: 6vh;
-  background-color: grey
+  font-family: "Permanent Marker", cursive;
 }
 
 .home.bk {
   position: absolute;
-  z-index: 1
+  z-index: 1;
 }
 
 .home_click {
   position: absolute;
-
   top: 360px;
   width: 600px;
-  height: 400px;
+  height: 250px;
   z-index: 2;
-  margin-left: 23%
-}
-
-.home_button {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  margin-left: 50%;
+  background-color: white;
+  border-radius: 142px;
 }
