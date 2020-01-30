@@ -5,14 +5,18 @@
 }
 
 .admin_card {
-  color: white;
+  color: black;
   display: flex;
-  background: linear-gradient(#a92233, #ff6666);
-
-
+  justify-content: space-around;
 }
 
 .admin_test {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  background: linear-gradient(#a92233, #ff6666);
+  justify-content: space-around;
+}
+
+.admin_admin {
+  margin: 30px
 }

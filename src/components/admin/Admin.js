@@ -21,14 +21,15 @@ const Admin = () => {
       <div className="admin_card">
         <div className="admin_test">
           {user.map(visitor => (
-            <div>
+            <div className="admin_admin">
+              <p>Date : {visitor.date_resa.substring(0, 10)}</p>
               <p>
                 {visitor.firstname} {visitor.lastname}
               </p>
-              <p>{visitor.date_resa}</p>
-              <p>Nombre de visiteurs {visitor.nb_visitors}</p>
+              <br />
+              <p>Nb d'adultes : {visitor.nb_visitors}</p>
+              <p>Nb d'enfants : {visitor.nb_children}</p>
               <p>{visitor.email}</p>
-              <p>prix : {visitor.price_to_pay} €</p>
             </div>
           ))}
         </div>
