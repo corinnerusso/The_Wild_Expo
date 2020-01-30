@@ -1,0 +1,19 @@
+.nav_ul {
+  display: flex;
+  flex-direction: row;
+  background-color: #a92233;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav_li {
+  list-style: none;
+  margin: 15px;
+  padding-left: 20px;
+  font-size: 4vh;
+  color: black;
+  font-family: "Permanent Marker", cursive;
+
+}

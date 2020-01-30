@@ -1,0 +1,21 @@
+.table_prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.table_info {
+  background: linear-gradient(#a92233, #ff6666);
+  height: 21vh;
+  width: 30vh;
+  border-radius: 20px;
+  padding-top: 45px;
+  font-size: 1.2vw;
+  font-family: "Permanent Marker", cursive;
+
+}
+
+.table_title {
+  font-size: 3vw;
+}

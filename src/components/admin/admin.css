@@ -1,0 +1,18 @@
+.admin_title {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2vw
+}
+
+.admin_card {
+  color: white;
+  display: flex;
+  background: linear-gradient(#a92233, #ff6666);
+
+
+}
+
+.admin_test {
+  display: flex;
+  flex-direction: column;
+}

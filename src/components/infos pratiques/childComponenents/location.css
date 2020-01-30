@@ -1,0 +1,16 @@
+.location_title {
+  font-size: 2vw;
+  color: white;
+  padding-top: 10vh;
+  font-family: "Permanent Marker", cursive;
+
+}
+
+.location_text {
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+}

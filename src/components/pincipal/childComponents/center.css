@@ -1,0 +1,29 @@
+.center_total {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center_div {
+  background-color: black;
+  color: white;
+}
+
+.center_picture {
+  width: 100%;
+  height: 100%;
+
+}
+
+.center_name {
+  color: white;
+  font-size: 3vh;
+  text-shadow: 0.1em 0.1em 0.2em white;
+}
+
+@media screen and (max-width: 640px) {
+  .center_total {
+    display: flex;
+    flex-direction: column;
+  }
+}
