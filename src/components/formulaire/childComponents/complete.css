@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 input {
   height: 36px;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 select {
@@ -16,7 +15,7 @@ select {
 
 .complete_title {
   font-family: "Permanent Marker", cursive;
-  font-size: 2vw
+  font-size: 2vw;
 }
 
 .test {
@@ -34,10 +33,8 @@ select {
   height: 5vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 5px
+  border-radius: 5px;
 }
-
-
 
 button {
   box-sizing: border-box;
@@ -57,7 +54,7 @@ button {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -69,10 +66,39 @@ button:focus {
 
 .first {
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-
-
 }
 
 button:hover {
   box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+.ReactModal__Overlay {
+  background-color: #e74c3c;
+  height: 200px;
+  width: 80vw;
+  margin: auto;
+
+}
+
+.modal_div {
+  display: flex;
+  justify-content: center;
+
+}
+
+.modal_p {
+  margin-top: 80px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 3vh;
+
+}
+
+.modal_close {
+  top: -20px;
+  right: 30px;
+  position: absolute;
+  font-size: 3vh;
+  font-family: "Permanent Marker", cursive;
+  border: solid;
+  padding: 0px 10px 5px 10px;
 }

@@ -30,6 +30,7 @@ const Admin = () => {
               <p>Nb d'adultes : {visitor.nb_visitors}</p>
               <p>Nb d'enfants : {visitor.nb_children}</p>
               <p>{visitor.email}</p>
+              <p>Prix à payer : {visitor.price_to_pay} €</p>
             </div>
           ))}
         </div>

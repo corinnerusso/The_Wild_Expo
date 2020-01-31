@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Modal from "react-modal";
 
 import "./complete.css";
 
@@ -26,11 +27,22 @@ const Complete = () => {
     if (form.nb_visitors || form.nb_children) {
       total = form.nb_visitors * 10 + form.nb_children * 5;
     }
-    if (form.nb_visitors == "group") {
+    if (form.nb_visitors === "group") {
       total = 25;
     }
 
     return total;
+  };
+
+  ///MODAL
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
   };
 
   //submit infos on database on submit
@@ -116,7 +128,27 @@ const Complete = () => {
           onChange={updateForm}
         />
         <div className="complete_date">Total : {handleTotal()} € </div>
-        <button text="Valider" onClick={() => submitForm()}>
+        <Modal
+          isOpen={modalIsOpen}
+          contentLabel="Réservation ok"
+          onRequestClose={closeModal}
+          className="ReactModal__Overlay"
+          id="modal"
+        >
+          <div className="modal_div">
+            <p className="modal_close" onClick={() => closeModal()}>
+              x
+            </p>
+            <p className="modal_p"> VOTRE RESERVATION EST VALIDEE</p>
+          </div>
+        </Modal>
+        <button
+          text="Valider"
+          onClick={e => {
+            submitForm();
+            openModal();
+          }}
+        >
           Valider
         </button>
       </div>
