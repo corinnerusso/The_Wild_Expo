@@ -11,6 +11,9 @@
 
 }
 
-a {
+.location-map {
   text-decoration: none;
+  color: #a92233;
+  font-family: "Permanent Marker", cursive;
+  font-size: 3vh;
 }

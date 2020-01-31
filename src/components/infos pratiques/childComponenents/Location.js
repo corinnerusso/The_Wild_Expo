@@ -10,7 +10,13 @@ const Location = () => {
         <p>18 rue Gambetta</p>
         <p>33000 BORDEAUX</p>
         <p>Tel : 07 07 07 07 07</p>
-        <a href="https://goo.gl/maps/puaVmB2BKBdUvb8z7">Nous situer</a>
+        <a
+          href="https://goo.gl/maps/puaVmB2BKBdUvb8z7"
+          className="location-map"
+          style={{ textDecoration: "none" }}
+        >
+          Nous situer
+        </a>
       </div>
     </div>
   );
